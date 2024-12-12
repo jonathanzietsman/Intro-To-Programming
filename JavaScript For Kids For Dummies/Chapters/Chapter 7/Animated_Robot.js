@@ -4,6 +4,8 @@ var rightEye = document.getElementById("righteye");
 var leftEye = document.getElementById("lefteye");
 // 1: Page 118
 var leftArm = document.getElementById("leftarm");
+
+
 // 2: Page 111
 rightEye.addEventListener("click", moveUpDown);
 // 3: Page 118

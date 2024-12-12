@@ -21,6 +21,7 @@ function placeOrder(){
     var deliveryPrice = calculateDelivery(orderPrice, deliveryCity, birthday);
     // Create the output
     var theOutput = "<p>Thank you for your order.</p>"
+
     // Output the delivery pirce if there is one
     // 2: Page 245
     if (deliveryPrice === 0){
@@ -31,6 +32,7 @@ function placeOrder(){
     }
     theOutput += "<p>Your total cost is: R" + (orderPrice + deliveryPrice);
     // display the output 
+    
     document.getElementById("displayTotal").innerHTML = theOutput;
 
 }

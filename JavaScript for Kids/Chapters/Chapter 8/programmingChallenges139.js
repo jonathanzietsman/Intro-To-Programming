@@ -1,4 +1,4 @@
-// 1: Doing Arithmetic With Finctions
+/* // 1: Doing Arithmetic With Finctions
 let add = function( operand1, operand2) {
     return operand1 + operand2;
 };
@@ -20,7 +20,7 @@ let areArraysSame = function(array1, array2){
 ;
 }
 areArraysSame([1, 2, 3], [4, 5, 6])
-
+ */
 // 3: Hangman, Using Functions
 var pickWord = function(){
     var words = [
@@ -84,13 +84,13 @@ var showAnswerAndCongratulatePlayer = function(answerArray){
     alert(answerArray.join(" "));
 };
 
-var word = pickWord();
-var answerArray = setupAnswerArray(word);
+var word = pickWord(); //
+var answerArray = setupAnswerArray(word); //
 var remainingLetters = word.length;
 
 while (remainingLetters > 0){
-    showPlayerProgress(answerArray);
-    var guess = getGuess();
+    showPlayerProgress(answerArray); //
+    var guess = getGuess(); //
     if (guess === null){
         break;
     }
@@ -98,9 +98,9 @@ while (remainingLetters > 0){
         alert('Please enter a single letter');
     }
     else{
-        var correctGuess = updateGameState(guess ,word, answerArray);
+        var correctGuess = updateGameState(guess ,word, answerArray); // 
         remainingLetters -= correctGuess;
     }
 }
 
-showAnswerAndCongratulatePlayer(answerArray);
+showAnswerAndCongratulatePlayer(answerArray); //

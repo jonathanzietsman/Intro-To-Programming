@@ -11,7 +11,7 @@ let randomBodyParts = [
     'Liver',
     'Kidneys',
     'Stomach'
-];
+]; 
 let randomAdjectives =[
     'Stupid',
     'Ugly',
